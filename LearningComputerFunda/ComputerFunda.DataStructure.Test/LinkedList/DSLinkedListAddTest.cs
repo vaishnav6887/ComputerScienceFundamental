@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using ComputerFunda.DataStructure.LinkedList;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using ComputerFunda.Common;
 
 namespace ComputerFunda.DataStructure.Test.LinkedList
 {
@@ -46,7 +47,31 @@ namespace ComputerFunda.DataStructure.Test.LinkedList
         }
 
         [TestMethod]
-        public void Add_Test_Positive_Data_Validation()
+        public void Add_Test_Delete_Positive_Data_Validation()
+        {
+            DSLinkedList<int> lnkLst = new DSLinkedList<int>();
+
+            IntDSNodeEqualityComparer intDSNodeEqualityComparer = new IntDSNodeEqualityComparer();
+
+            lnkLst.Add(5);
+            lnkLst.Add(10);
+            lnkLst.Add(15);
+            lnkLst.Add(20);
+            lnkLst.Delete(10, intDSNodeEqualityComparer);
+
+            int actual2ndIndex = lnkLst.ValueAtIndex(2);
+
+            lnkLst.Add(25);
+
+            int actualAt3rdIndex = lnkLst.ValueAtIndex(3);
+
+            Assert.AreEqual(20, actual2ndIndex);
+
+            Assert.AreEqual(25, actualAt3rdIndex);
+        }
+
+        [TestMethod]
+        public void Add_Test_Delete_BY_INDEX_Positive_Data_Validation()
         {
             DSLinkedList<int> lnkLst = new DSLinkedList<int>();
 
@@ -54,16 +79,17 @@ namespace ComputerFunda.DataStructure.Test.LinkedList
             lnkLst.Add(10);
             lnkLst.Add(15);
             lnkLst.Add(20);
+            lnkLst.Delete(1);
 
             int actual2ndIndex = lnkLst.ValueAtIndex(2);
 
             lnkLst.Add(25);
 
-            int actualAt4thIndex = lnkLst.ValueAtIndex(4);
+            int actualAt3rdIndex = lnkLst.ValueAtIndex(3);
 
-            Assert.AreEqual(15, actual2ndIndex);
+            Assert.AreEqual(20, actual2ndIndex);
 
-            Assert.AreEqual(25, actualAt4thIndex);
+            Assert.AreEqual(25, actualAt3rdIndex);
         }
     }
 }

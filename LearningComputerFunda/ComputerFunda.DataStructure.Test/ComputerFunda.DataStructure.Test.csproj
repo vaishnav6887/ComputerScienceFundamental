@@ -74,6 +74,10 @@
     <Analyzer Include="..\packages\xunit.analyzers.0.7.0\analyzers\dotnet\cs\xunit.analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ComputerFunda.Common\ComputerFunda.Common.csproj">
+      <Project>{f4353686-50c8-49b5-b22a-8f258464a253}</Project>
+      <Name>ComputerFunda.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ComputerFunda.DataStructure\ComputerFunda.DataStructure.csproj">
       <Project>{cd224133-1878-4543-9d7a-7b51978eca7e}</Project>
       <Name>ComputerFunda.DataStructure</Name>
