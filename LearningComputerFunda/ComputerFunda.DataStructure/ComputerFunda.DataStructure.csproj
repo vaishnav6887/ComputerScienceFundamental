@@ -40,12 +40,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LinkedList\DSLinkedList.cs" />
+    <Compile Include="LinkedList\DSNode.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ArrayList\" />
     <Folder Include="Hash\" />
-    <Folder Include="LinkedList\" />
     <Folder Include="Queue\" />
     <Folder Include="Stack\" />
     <Folder Include="Tree\" />
