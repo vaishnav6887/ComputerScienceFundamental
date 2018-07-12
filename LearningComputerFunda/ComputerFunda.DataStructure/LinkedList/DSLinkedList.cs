@@ -8,9 +8,9 @@ namespace ComputerFunda.DataStructure.LinkedList
 {
     public class DSLinkedList<T>
     {
-        private DSNode<T> _head;
+        public DSNode<T> _head { get; set; }
 
-        private DSNode<T> _current;
+        public DSNode<T> _current { get; set; }
 
         public int Count { get; set; }
 
@@ -50,19 +50,19 @@ namespace ComputerFunda.DataStructure.LinkedList
                 throw new IndexOutOfRangeException();
             }
 
-            if(index == 0)
+            if (index == 0)
             {
                 return this._head.Data;
             }
 
-            if(index == (Count - 1))
+            if (index == (Count - 1))
             {
                 return this._current.Data;
             }
 
             DSNode<T> returnValue = this._head;
             int curr = 0;
-            while(curr < index)
+            while (curr < index)
             {
                 returnValue = returnValue.Next;
                 curr++;
@@ -80,20 +80,20 @@ namespace ComputerFunda.DataStructure.LinkedList
 
             DSNode<T> current = this._head;
             DSNode<T> priv = null;
-            if(current != null && equalityComparer.Equals(current.Data, Key))
+            if (current != null && equalityComparer.Equals(current.Data, Key))
             {
                 this._head = current.Next;
                 this.Count--;
                 return true;
             }
 
-            while(current != null && !equalityComparer.Equals(current.Data, Key))
+            while (current != null && !equalityComparer.Equals(current.Data, Key))
             {
                 priv = current;
                 current = current.Next;
             }
 
-            if(current != null)
+            if (current != null)
             {
                 priv.Next = current.Next;
                 this.Count--;
@@ -105,17 +105,17 @@ namespace ComputerFunda.DataStructure.LinkedList
 
         public bool Delete(int index)
         {
-            if(this._head == null)
+            if (this._head == null)
             {
                 return false;
             }
 
-            if(index > (Count - 1))
+            if (index > (Count - 1))
             {
                 throw new IndexOutOfRangeException();
             }
 
-            if(index == 0)
+            if (index == 0)
             {
                 this._head = this._head.Next;
                 this.Count--;
@@ -135,6 +135,84 @@ namespace ComputerFunda.DataStructure.LinkedList
             prev.Next = current.Next;
             Count--;
             return true;
+        }
+
+        public void Reverse()
+        {
+            DSNode<T> prev = null;
+            DSNode<T> next;
+            var current = this._head;
+            this._current = this._head;
+            while (current != null)
+            {
+                next = current.Next;
+                current.Next = prev;
+                prev = current;
+                current = next;
+            }
+
+            this._head = prev;
+        }
+
+        public bool DetectLoop()
+        {
+            bool returnValue = false;
+            Dictionary<T, int> map = new Dictionary<T, int>();
+            int i = 0;
+            DSNode<T> current = this._head;
+            while (current != null)
+            {
+                if (!map.ContainsKey(current.Data))
+                {
+                    map.Add(current.Data, i);
+                }
+                else
+                {
+                    returnValue = true;
+                    break;
+                }
+
+                current = current.Next;
+
+                i++;
+            }
+
+            return returnValue;
+        }
+
+        public bool FloydLoopDetect(IEqualityComparer<T> comparer)
+        {
+            bool returnValue = false;
+            var fast = this._head;
+            var slow = this._head;
+
+            while (slow != null && fast != null && fast.Next != null)
+            {
+                slow = slow.Next;
+                fast = fast.Next.Next;
+
+                if (comparer.Equals(slow.Data, fast.Data))
+                {
+                    returnValue = true;
+                    break;
+                }
+            }
+
+            return returnValue;
+        }
+
+        public T FindMiddle()
+        {
+            DSNode<T> slow = this._head;
+            DSNode<T> fast = this._head;
+
+            while(fast != null && fast.Next != null)
+            {
+                slow = slow.Next;
+                fast = fast.Next.Next;
+            }
+
+            return slow.Data;
         }
     }
 }

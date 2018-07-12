@@ -10,7 +10,7 @@ using ComputerFunda.Common;
 namespace ComputerFunda.DataStructure.Test.LinkedList
 {
     [TestClass]
-    public class DSLinkedListAddTest
+    public class DSLinkedListTest
     {
         [TestMethod]
         public void Add_Test_Positive_CountCheck()
@@ -90,6 +90,77 @@ namespace ComputerFunda.DataStructure.Test.LinkedList
             Assert.AreEqual(20, actual2ndIndex);
 
             Assert.AreEqual(25, actualAt3rdIndex);
+        }
+
+        [TestMethod]
+        public void Add_Reverse_LinkedList()
+        {
+            DSLinkedList<int> lnkLst = new DSLinkedList<int>();
+            lnkLst.Add(5);
+            lnkLst.Add(10);
+            lnkLst.Add(15);
+            lnkLst.Add(20);
+            
+            lnkLst.Add(25);
+            lnkLst.Delete(4);
+            int expected = lnkLst.ValueAtIndex(0);
+            lnkLst.Reverse();
+            int actual = lnkLst.ValueAtIndex(3);
+            Assert.AreEqual(expected, actual);
+        }
+        
+        [TestMethod]
+        public void Add_Detect_Loop_IN_LinkedList()
+        {
+            DSLinkedList<int> lnkLst = new DSLinkedList<int>();
+            for (int i = 1; i <= 10; i++)
+            {
+                lnkLst.Add(i * 5);
+            }
+
+            lnkLst._head.Next.Next.Next.Next.Next = lnkLst._head;
+
+            bool expected = true;
+
+            bool actual = lnkLst.DetectLoop();
+
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void Add_Detect_Loop_IN_Flyod_Algo_LinkedList()
+        {
+            DSLinkedList<int> lnkLst = new DSLinkedList<int>();
+            for (int i = 1; i <= 4; i++)
+            {
+                lnkLst.Add(i * 5);
+            }
+
+            lnkLst._head.Next.Next.Next = lnkLst._head;
+
+            bool expected = true;
+
+            IntDSNodeEqualityComparer intDSNodeEqualityComparer = new IntDSNodeEqualityComparer();
+
+            bool actual = lnkLst.FloydLoopDetect(intDSNodeEqualityComparer);
+
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void Find_Middle_By_FlyodAlgo()
+        {
+            DSLinkedList<int> lnkLst = new DSLinkedList<int>();
+            for (int i = 1; i <= 10; i++)
+            {
+                lnkLst.Add(i * 5);
+            }
+
+            int expected = 30;
+            
+            int actual = lnkLst.FindMiddle();
+
+            Assert.AreEqual(expected, actual);
         }
     }
 }
