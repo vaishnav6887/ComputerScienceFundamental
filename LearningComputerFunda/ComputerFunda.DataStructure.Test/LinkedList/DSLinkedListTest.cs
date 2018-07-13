@@ -162,5 +162,23 @@ namespace ComputerFunda.DataStructure.Test.LinkedList
 
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        public void Count_Number_Of_Times_Element_Repeated()
+        {
+            DSLinkedList<int> lnkLst = new DSLinkedList<int>();
+            for (int i = 1; i <= 10; i++)
+            {
+                lnkLst.Add(i * 5);
+            }
+
+            lnkLst.Add(5);
+
+            int expected = 2;
+            IntDSNodeEqualityComparer comparer = new IntDSNodeEqualityComparer();
+            int actual = lnkLst.CountOfRepetationOfElement(5, comparer);
+
+            Assert.AreEqual(expected, actual);
+        }
     }
 }

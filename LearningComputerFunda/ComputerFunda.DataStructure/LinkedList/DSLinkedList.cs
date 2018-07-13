@@ -214,5 +214,22 @@ namespace ComputerFunda.DataStructure.LinkedList
 
             return slow.Data;
         }
+
+        public int CountOfRepetationOfElement(T item, IEqualityComparer<T> comparer)
+        {
+            int count = 0;
+            DSNode<T> current = this._head;
+            while(current != null)
+            {
+                if(comparer.Equals(current.Data, item))
+                {
+                    count++;
+                }
+
+                current = current.Next;
+            }
+
+            return count;
+        }
     }
 }
