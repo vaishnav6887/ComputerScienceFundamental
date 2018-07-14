@@ -10,6 +10,9 @@ namespace ComputerFunda.DataStructure.Tree
     {
         public DSTreeNode<T> Head { get; set; }
 
+        /// <summary>
+        ///  this is only for returning the testing data. This will not be actual part of the BSBinaryTree implementation
+        /// </summary>
         public List<T> _TempDataConsole { get; set; }
 
         public void InOrderTraversal()
