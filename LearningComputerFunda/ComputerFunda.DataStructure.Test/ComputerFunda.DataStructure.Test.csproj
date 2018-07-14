@@ -68,6 +68,7 @@
     <Compile Include="LinkedList\DSLinkedListTest.cs" />
     <Compile Include="LinkedList\DSStackTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tree\DSBinaryTreeTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

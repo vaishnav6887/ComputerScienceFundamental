@@ -47,11 +47,12 @@
     <Compile Include="LinkedList\DSNode.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Stack\DSStack.cs" />
+    <Compile Include="Tree\DSBinaryTree.cs" />
+    <Compile Include="Tree\DSTreeNode.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Hash\" />
     <Folder Include="Queue\" />
-    <Folder Include="Tree\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
