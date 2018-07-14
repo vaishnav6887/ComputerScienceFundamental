@@ -40,15 +40,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArrayList\DSArray.cs" />
+    <Compile Include="LinkedList\DSDoubleLinkedList.cs" />
+    <Compile Include="LinkedList\DSDoubleNode.cs" />
     <Compile Include="LinkedList\DSLinkedList.cs" />
     <Compile Include="LinkedList\DSNode.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Stack\DSStack.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="ArrayList\" />
     <Folder Include="Hash\" />
     <Folder Include="Queue\" />
-    <Folder Include="Stack\" />
     <Folder Include="Tree\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

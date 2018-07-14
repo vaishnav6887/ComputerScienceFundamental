@@ -64,7 +64,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArrayList\DSArrayTest.cs" />
     <Compile Include="LinkedList\DSLinkedListTest.cs" />
+    <Compile Include="LinkedList\DSStackTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
