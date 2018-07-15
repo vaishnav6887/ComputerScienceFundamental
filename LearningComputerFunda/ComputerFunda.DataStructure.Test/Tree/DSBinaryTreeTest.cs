@@ -274,5 +274,69 @@ namespace ComputerFunda.DataStructure.Test.Tree
         }
 
         #endregion
+
+        #region Level Order Traversal
+        [TestMethod]
+        public void Level_Order_Traversal_TEST()
+        {
+            //level 0
+            this.Tree.Head = new DSTreeNode<int>(1);
+
+            //level 1
+            this.Tree.Head.Left = new DSTreeNode<int>(2);
+            this.Tree.Head.Right = new DSTreeNode<int>(3);
+
+            //level 2
+            this.Tree.Head.Left.Left = new DSTreeNode<int>(4);
+            this.Tree.Head.Left.Right = new DSTreeNode<int>(5);
+
+            // level 3
+            this.Tree.Head.Left.Left.Left = new DSTreeNode<int>(9);
+            this.Tree.Head.Left.Left.Right = new DSTreeNode<int>(8);
+            this.Tree.Head.Left.Right.Left = new DSTreeNode<int>(7);
+            this.Tree.Head.Left.Right.Right = new DSTreeNode<int>(6);
+
+            this.Tree.LevelOrderTraversal();
+
+            List<int> expected = new List<int>()
+            {
+                1,2,3,4,5,9,8,7,6
+            };
+
+            CollectionAssert.AreEqual(expected, this.Tree._TempDataConsole);
+        }
+
+        [TestMethod]
+        public void Level_Order_Traversal_TEST_Using_Queue()
+        {
+            //level 0
+            this.Tree.Head = new DSTreeNode<int>(1);
+
+            //level 1
+            this.Tree.Head.Left = new DSTreeNode<int>(2);
+            this.Tree.Head.Right = new DSTreeNode<int>(3);
+
+            //level 2
+            this.Tree.Head.Left.Left = new DSTreeNode<int>(4);
+            this.Tree.Head.Left.Right = new DSTreeNode<int>(5);
+
+            // level 3
+            this.Tree.Head.Left.Left.Left = new DSTreeNode<int>(9);
+            this.Tree.Head.Left.Left.Right = new DSTreeNode<int>(8);
+            this.Tree.Head.Left.Right.Left = new DSTreeNode<int>(7);
+            this.Tree.Head.Left.Right.Right = new DSTreeNode<int>(6);
+
+            //this.Tree.LevelOrderTraversal();
+
+            List<int> actual = this.Tree.LevelOrderTraversalUsingQueue();
+
+            List<int> expected = new List<int>()
+            {
+                1,2,3,4,5,9,8,7,6
+            };
+
+            CollectionAssert.AreEqual(expected, actual);
+        }
+        #endregion
     }
 }
