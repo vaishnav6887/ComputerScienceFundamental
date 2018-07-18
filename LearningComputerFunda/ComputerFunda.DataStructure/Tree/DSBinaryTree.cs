@@ -84,6 +84,50 @@ namespace ComputerFunda.DataStructure.Tree
             return newList;
         }
 
+        public void Add(T value)
+        {
+            /// check if we have root? 
+            /// if not then add new root element and then return.
+            /// If yes then traverse its children from left to right. find first free spot and add the node in that spot.
+
+            DSTreeNode<T> newNode = new DSTreeNode<T>(value);
+
+            if(this.Head == null)
+            {
+                this.Head = newNode;
+                return;
+            }
+
+            DSQueue<DSTreeNode<T>> dSQueue = new DSQueue<DSTreeNode<T>>();
+
+            dSQueue.Enqueue(this.Head);
+
+            while(dSQueue.Count > 0)
+            {
+                var current = dSQueue.Dequeue();
+
+                if(current.Data.Left == null)
+                {
+                    current.Data.Left = newNode;
+                    break;
+                }
+                else
+                {
+                    dSQueue.Enqueue(current.Data.Left);
+                }
+
+                if(current.Data.Right == null)
+                {
+                    current.Data.Right = newNode;
+                    break;
+                }
+                else
+                {
+                    dSQueue.Enqueue(current.Data.Right);
+                }
+            }
+        }
+
         private void traverseUsingQueue(DSTreeNode<T> node, DSQueue<DSTreeNode<T>> queue, List<T> newList)
         {
             while(queue.Count != 0)

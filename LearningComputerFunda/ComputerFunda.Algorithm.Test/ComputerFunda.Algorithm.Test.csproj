@@ -49,9 +49,30 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Search\BinarySearchTest.cs" />
+    <Compile Include="Search\JumpSearchTest.cs" />
+    <Compile Include="Search\LinearSearchTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ComputerFunda.Algorithm\ComputerFunda.Algorithm.csproj">
+      <Project>{be513f46-3717-485f-b18a-92e72e982e16}</Project>
+      <Name>ComputerFunda.Algorithm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ComputerFunda.Common\ComputerFunda.Common.csproj">
+      <Project>{f4353686-50c8-49b5-b22a-8f258464a253}</Project>
+      <Name>ComputerFunda.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ComputerFunda.DataStructure\ComputerFunda.DataStructure.csproj">
+      <Project>{cd224133-1878-4543-9d7a-7b51978eca7e}</Project>
+      <Name>ComputerFunda.DataStructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ComputerFunda.ProgrammingProblem\ComputerFunda.ProgrammingProblem.csproj">
+      <Project>{70892c10-0c5c-4aba-952d-5a432fe12d1f}</Project>
+      <Name>ComputerFunda.ProgrammingProblem</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

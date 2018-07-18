@@ -49,6 +49,8 @@
     <Compile Include="Queue\DSQueue.cs" />
     <Compile Include="Queue\DSQueueNode.cs" />
     <Compile Include="Stack\DSStack.cs" />
+    <Compile Include="Tree\BinarySearchTree\DSBinarySearchNode.cs" />
+    <Compile Include="Tree\BinarySearchTree\DSBinarySearchTree.cs" />
     <Compile Include="Tree\DSBinaryTree.cs" />
     <Compile Include="Tree\DSTreeNode.cs" />
   </ItemGroup>

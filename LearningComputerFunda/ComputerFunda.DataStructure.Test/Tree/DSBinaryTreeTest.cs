@@ -338,5 +338,54 @@ namespace ComputerFunda.DataStructure.Test.Tree
             CollectionAssert.AreEqual(expected, actual);
         }
         #endregion
+
+        #region Add to binary tree
+        [TestMethod]
+        public void Add_Binary_Tree()
+        {
+            //level 0
+            this.Tree.Head = new DSTreeNode<int>(1);
+
+            //level 1
+            this.Tree.Head.Left = new DSTreeNode<int>(2);
+            this.Tree.Head.Right = new DSTreeNode<int>(3);
+
+            //level 2
+            this.Tree.Head.Left.Left = new DSTreeNode<int>(4);
+            this.Tree.Head.Left.Right = new DSTreeNode<int>(5);
+
+            // level 3
+            this.Tree.Head.Left.Left.Left = new DSTreeNode<int>(6);
+            this.Tree.Head.Left.Left.Right = new DSTreeNode<int>(7);
+            this.Tree.Head.Left.Right.Left = new DSTreeNode<int>(8);
+            this.Tree.Head.Left.Right.Right = new DSTreeNode<int>(9);
+
+            this.Tree.Add(10);
+
+            this.Tree.InOrderTraversal();
+
+            List<int> expected = new List<int>()
+            {
+                6,4,7,2,8,5,9,1,10,3
+            };
+
+            CollectionAssert.AreEqual(expected, this.Tree._TempDataConsole);
+        }
+
+        [TestMethod]
+        public void Add_Binary_Tree_Add_At_Node()
+        {
+            this.Tree.Add(10);
+
+            this.Tree.InOrderTraversal();
+
+            List<int> expected = new List<int>()
+            {
+                10
+            };
+
+            CollectionAssert.AreEqual(expected, this.Tree._TempDataConsole);
+        }
+        #endregion
     }
 }
