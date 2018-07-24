@@ -34,5 +34,35 @@ namespace ComputerFunda.DataStructure.ArrayList
             }
             return result;
         }
+
+        /// <summary>
+        /// https://www.hackerrank.com/challenges/new-year-chaos/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=arrays
+        /// </summary>
+        /// <param name="q"></param>
+        public static string MinimumBribes(int[] q)
+        {
+            int Bribes = 0;
+            for (int i = q.Length; i > 0; i--)
+            {
+                int arrValue = q[i - 1];
+                if (arrValue - i > 2)
+                {
+                    //Console.WriteLine();
+                    return "Too chaotic";
+                }
+                int maxSwap = Math.Max(0, arrValue - 2);
+
+                for (int j = maxSwap; j < i - 1; j++)
+                {
+                    if (q[j] > arrValue)
+                    {
+                        Bribes++;
+                    }
+                }
+            }
+            return Bribes.ToString();
+            //Console.WriteLine(Bribes);
+
+        }
     }
 }

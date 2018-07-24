@@ -24,5 +24,23 @@ namespace ComputerFunda.DataStructure.Test.ArrayList
             int[] actual = ArrayOperations.LeftRotation(intput, operations);
             CollectionAssert.AreEqual(expected, actual);
         }
+        [TestMethod]
+        public void TestMinimumBribes_CorrectSwaps()
+        {
+            int[] intput = new int[] { 1, 2, 5, 3, 7, 8, 6, 4 };
+
+            string expected = "7";
+            string actual = ArrayOperations.MinimumBribes(intput);
+            Assert.AreEqual(expected, actual);
+        }
+        [TestMethod]
+        public void TestMinimumBribes_WrongSwaps()
+        {
+            int[] intput = new int[] { 2, 5, 1, 3, 4 };
+
+            string expected = "Too chaotic";
+            string actual = ArrayOperations.MinimumBribes(intput);
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
