@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ComputerFunda.DataStructure.ArrayList
+namespace ComputerFunda.ProgrammingProblem.Array
 {
-    public static class ArrayOperations
+    public static class ArrayRotationV1
     {
         /// <summary>
         /// https://www.hackerrank.com/challenges/ctci-array-left-rotation/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=arrays
@@ -50,7 +50,7 @@ namespace ComputerFunda.DataStructure.ArrayList
                     //Console.WriteLine();
                     return "Too chaotic";
                 }
-                int maxSwap = Math.Max(0, arrValue - 2);
+                int maxSwap = System.Math.Max(0, arrValue - 2);
 
                 for (int j = maxSwap; j < i - 1; j++)
                 {
