@@ -68,6 +68,7 @@
     <Compile Include="Search\BinarySearchTest.cs" />
     <Compile Include="Search\JumpSearchTest.cs" />
     <Compile Include="Search\LinearSearchTest.cs" />
+    <Compile Include="Sort\BubbleSortTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
