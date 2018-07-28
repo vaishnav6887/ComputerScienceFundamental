@@ -35,5 +35,23 @@ namespace ComputerFunda.Algorithm.Test.Sort
 
             CollectionAssert.AreEqual(expected, accual);
         }
+
+        [TestMethod]
+        public void Sort_BubbleSortDesc_WhenArraySizeBig_Test()
+        {
+            var primeNumbers = Prime.PrimeNumber(200000);
+
+            int[] arr = primeNumbers.ToArray();
+
+            BubbleSort sort = new BubbleSort();
+
+            int[] accual = sort.SortDesc(arr);
+
+            primeNumbers.Reverse();
+
+            var expected = primeNumbers.ToArray();
+
+            CollectionAssert.AreEqual(expected, accual);
+        }
     }
 }
