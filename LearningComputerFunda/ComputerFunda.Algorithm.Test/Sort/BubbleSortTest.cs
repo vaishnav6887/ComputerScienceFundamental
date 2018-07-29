@@ -11,7 +11,7 @@ namespace ComputerFunda.Algorithm.Test.Sort
         [TestMethod]
         public void Sort_BubbleSort_Test()
         {
-            int[] arr = new int[] { 3, 4, 2, 1, 5, 6 };
+            int[] arr = new int[] { 1, 4, 2, 3, 5, 6 };
 
             BubbleSort sort = new BubbleSort();
 

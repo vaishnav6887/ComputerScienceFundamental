@@ -17,20 +17,30 @@ namespace ComputerFunda.Algorithm.Sort
 
             /// Dry run arr = (3, 4, 2, 1, 5, 6)
             /// iteration 
-
+            int lastIterationSwapIndex = arr.Length - 1;
             for (int i = 0; i < arr.Length - 1; i++)
             {
-                for (int j = 0; j < arr.Length - 1 - i; j++)
+                bool swapped = false;
+                /// Try to be intelligent and reducing number of iterations based on last how many element already sorted based on the last swap index.
+                int len = (arr.Length - 1 - i) < lastIterationSwapIndex ? (arr.Length - 1 - i) : lastIterationSwapIndex;
+                for (int j = 0; j < len; j++)
                 {
                     if (arr[j] > arr[j + 1])
                     {
                         int swap = arr[j];
                         arr[j] = arr[j + 1];
                         arr[j + 1] = swap;
+                        swapped = true;
+                        lastIterationSwapIndex = j + 1;
                     }
                 }
-            }
 
+                if(!swapped)
+                {
+                    break;
+                }
+            }
+            Console.WriteLine(lastIterationSwapIndex);
             return arr;
         }
 
@@ -43,17 +53,26 @@ namespace ComputerFunda.Algorithm.Sort
 
             /// Dry run arr = (3, 4, 2, 1, 5, 6)
             /// iteration 
-
+            int lastIterationSwapIndex = arr.Length - 1;
             for (int i = 0; i < arr.Length - 1; i++)
             {
-                for (int j = 0; j < arr.Length - 1 - i; j++)
+                bool swapped = false;
+                int len = (arr.Length - 1 - i) < lastIterationSwapIndex ? (arr.Length - 1 - i) : lastIterationSwapIndex;
+                for (int j = 0; j < len; j++)
                 {
                     if (arr[j] < arr[j + 1])
                     {
                         int swap = arr[j];
                         arr[j] = arr[j + 1];
                         arr[j + 1] = swap;
+                        swapped = true;
+                        lastIterationSwapIndex = j + 1;
                     }
+                }
+
+                if (!swapped)
+                {
+                    break;
                 }
             }
 
