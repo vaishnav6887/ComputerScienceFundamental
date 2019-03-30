@@ -69,6 +69,7 @@
     <Compile Include="Search\JumpSearchTest.cs" />
     <Compile Include="Search\LinearSearchTest.cs" />
     <Compile Include="Sort\BubbleSortTest.cs" />
+    <Compile Include="Sort\SelectionSortTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
