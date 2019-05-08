@@ -45,6 +45,7 @@
     <Compile Include="Array\SortArrayMinimumSwaps.cs" />
     <Compile Include="Math\MathProblems.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="String\CheckStringsArePermutation.cs" />
     <Compile Include="String\HasUniqueCharInString.cs" />
     <Compile Include="Tree\BinarySearchTree.cs" />
   </ItemGroup>
