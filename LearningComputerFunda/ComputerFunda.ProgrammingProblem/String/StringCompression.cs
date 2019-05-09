@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace ComputerFunda.ProgrammingProblem.String
 {
+    /// <summary>
+    ///  Cracking Coding interview Book: Problem No 1.6: String Compression
+    /// </summary>
     public class StringCompression
     {
         public string Compress(string input)
