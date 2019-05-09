@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace ComputerFunda.ProgrammingProblem.String
 {
+    /// <summary>
+    /// Cracking coding interview: Problem 1.5 : One Away (Easy)
+    /// </summary>
     public class OneOperationAway
     {
         public bool IsOneAway(string argA, string argB)
