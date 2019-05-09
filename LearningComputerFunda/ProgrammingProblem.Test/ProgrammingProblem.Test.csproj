@@ -71,6 +71,7 @@
     <Compile Include="String\HasUniqueCharInStringTest.cs" />
     <Compile Include="String\CheckStringsArePermutationTest.cs" />
     <Compile Include="String\StringCompressionTest.cs" />
+    <Compile Include="String\OneOperationAwayTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
