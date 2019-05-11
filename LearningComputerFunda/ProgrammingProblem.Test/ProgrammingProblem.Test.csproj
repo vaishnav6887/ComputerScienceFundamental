@@ -64,6 +64,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Array\RotateMatrixTest.cs" />
     <Compile Include="Array\SortArrayMinimumSwapsTest.cs" />
     <Compile Include="Array\ArrayRotationV1Test.cs" />
     <Compile Include="Array\ArrayRotationV2Test.cs" />

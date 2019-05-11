@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Array\ArrayRotationV1.cs" />
     <Compile Include="Array\ArrayRotationV2.cs" />
+    <Compile Include="Array\RotateMatrix.cs" />
     <Compile Include="Array\SortArrayMinimumSwaps.cs" />
     <Compile Include="Math\MathProblems.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
