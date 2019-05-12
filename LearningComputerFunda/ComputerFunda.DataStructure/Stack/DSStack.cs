@@ -44,16 +44,23 @@ namespace ComputerFunda.DataStructure.Stack
             
         }
 
-        public void Pop()
+        public T Pop()
         {
             if (this.Head == null)
             {
-                return;
+                return default(T);
             }
 
+            T returnValue = this.Head.Data;
             this.Head = this.Head.Next;
-            this.Head.Prev = null;
+            if(this.Head != null)
+            {
+                this.Head.Prev = null;
+            }
+            
             this.Count--;
+
+            return returnValue;
         }
 
         public void findMiddle()

@@ -68,6 +68,7 @@
     <Compile Include="Array\SortArrayMinimumSwapsTest.cs" />
     <Compile Include="Array\ArrayRotationV1Test.cs" />
     <Compile Include="Array\ArrayRotationV2Test.cs" />
+    <Compile Include="LinkedList\PalindromeTest.cs" />
     <Compile Include="LinkedList\RemoveDuplicatesTest.cs" />
     <Compile Include="LinkedList\RemoveListElementTest.cs" />
     <Compile Include="LinkedList\ReturnKthToLastElementTest.cs" />

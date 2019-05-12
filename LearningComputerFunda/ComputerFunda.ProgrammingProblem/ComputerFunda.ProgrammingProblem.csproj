@@ -45,6 +45,8 @@
     <Compile Include="Array\RotateMatrix.cs" />
     <Compile Include="Array\SortArrayMinimumSwaps.cs" />
     <Compile Include="LinkedList\DeleteMiddleElementInList.cs" />
+    <Compile Include="LinkedList\FindMiddleOfList.cs" />
+    <Compile Include="LinkedList\Palindrome.cs" />
     <Compile Include="LinkedList\RemoveDuplicate.cs" />
     <Compile Include="LinkedList\RemoveListElement.cs" />
     <Compile Include="LinkedList\ReturnKthToLastElement.cs" />
