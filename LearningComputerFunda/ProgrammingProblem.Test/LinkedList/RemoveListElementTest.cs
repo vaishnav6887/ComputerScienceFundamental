@@ -48,7 +48,7 @@ namespace ProgrammingProblem.Test.LinkedList
         }
 
         [TestMethod]
-        public void Execute_Positive_Test()
+        public void Remove_List_Element_Execute_Positive_Test()
         {
             int input = 6;
 
