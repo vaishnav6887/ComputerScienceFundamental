@@ -71,6 +71,7 @@
     <Compile Include="LinkedList\RemoveDuplicatesTest.cs" />
     <Compile Include="LinkedList\RemoveListElementTest.cs" />
     <Compile Include="LinkedList\ReturnKthToLastElementTest.cs" />
+    <Compile Include="LinkedList\DeleteMiddleElementInListTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="String\HasUniqueCharInStringTest.cs" />
     <Compile Include="String\CheckStringsArePermutationTest.cs" />
