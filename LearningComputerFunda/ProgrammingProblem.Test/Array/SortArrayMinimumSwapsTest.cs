@@ -3,6 +3,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace ComputerFunda.DataStructure.Test.ArrayList
 {
+    [TestCategory("Array")]
     [TestClass]
     public class SortArrayMinimumSwapsTest
     {

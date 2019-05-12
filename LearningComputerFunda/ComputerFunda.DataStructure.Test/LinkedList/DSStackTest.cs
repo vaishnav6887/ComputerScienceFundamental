@@ -10,6 +10,7 @@ using ComputerFunda.DataStructure.Stack;
 
 namespace ComputerFunda.DataStructure.Test.LinkedList
 {
+    [TestCategory("Stack")]
     [TestClass]
     public class DSStackTest
     {

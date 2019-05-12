@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace ComputerFunda.DataStructure.Test.ArrayList
 {
+    [TestCategory("ArrayList")]
     [TestClass]
     public class DSArrayTest
     {

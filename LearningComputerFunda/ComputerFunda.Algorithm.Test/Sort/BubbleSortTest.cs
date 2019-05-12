@@ -5,6 +5,7 @@ using System.Collections.Generic;
 
 namespace ComputerFunda.Algorithm.Test.Sort
 {
+    [TestCategory("SortingAlgorithm")]
     [TestClass]
     public class BubbleSortTest
     {

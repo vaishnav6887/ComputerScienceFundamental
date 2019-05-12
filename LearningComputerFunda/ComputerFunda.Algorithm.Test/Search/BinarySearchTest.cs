@@ -5,6 +5,7 @@ using System.Collections.Generic;
 
 namespace ComputerFunda.Algorithm.Test.Search
 {
+    [TestCategory("SearchingAlgorithm")]
     [TestClass]
     public class BinarySearchTest
     {

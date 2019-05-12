@@ -7,6 +7,7 @@ using System.Linq;
 
 namespace ProgrammingProblem.Test.Array
 {
+    [TestCategory("Array")]
     [TestClass]
     public class ArrayRotationV2Test
     {

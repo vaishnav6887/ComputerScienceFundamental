@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using ComputerFunda.Common;
 using ComputerFunda.DataStructure.LinkedList;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ComputerFunda.Common;
 
 namespace ComputerFunda.DataStructure.Test.LinkedList
 {
+    [TestCategory("LinkedList")]
     [TestClass]
     public class DSLinkedListTest
     {
@@ -131,12 +127,18 @@ namespace ComputerFunda.DataStructure.Test.LinkedList
         public void Add_Detect_Loop_IN_Flyod_Algo_LinkedList()
         {
             DSLinkedList<int> lnkLst = new DSLinkedList<int>();
-            for (int i = 1; i <= 4; i++)
-            {
-                lnkLst.Add(i * 5);
-            }
+            lnkLst.Add(-1);
+            lnkLst.Add(-7);
+            lnkLst.Add(7);
+            lnkLst.Add(-4);
+            lnkLst.Add(19);
+            lnkLst.Add(6);
+            lnkLst.Add(-9);
+            lnkLst.Add(-5);
+            lnkLst.Add(2);
+            lnkLst.Add(-5);
 
-            lnkLst._head.Next.Next.Next = lnkLst._head;
+            lnkLst._head.Next.Next.Next.Next.Next.Next = lnkLst._head;
 
             bool expected = true;
 

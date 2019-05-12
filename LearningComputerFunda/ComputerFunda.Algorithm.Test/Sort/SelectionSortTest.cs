@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace ComputerFunda.Algorithm.Test.Sort
 {
+    [TestCategory("SortingAlgorithm")]
     [TestClass]
     public class SelectionSortTest
     {

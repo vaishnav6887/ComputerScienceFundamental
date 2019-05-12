@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace ComputerFunda.DataStructure.Test.Tree
 {
+    [TestCategory("BinaryTree")]
     [TestClass]
     public class DSBinaryTreeTest
     {

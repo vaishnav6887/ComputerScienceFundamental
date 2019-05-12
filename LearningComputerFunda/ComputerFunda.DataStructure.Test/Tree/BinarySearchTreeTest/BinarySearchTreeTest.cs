@@ -8,6 +8,7 @@ using ComputerFunda.DataStructure.Tree.BinarySearchTree;
 
 namespace ComputerFunda.DataStructure.Test.Tree.BinarySearchTreeTest
 {
+    [TestCategory("BinarySearchTree")]
     [TestClass]
     public class BinarySearchTreeTest
     {
