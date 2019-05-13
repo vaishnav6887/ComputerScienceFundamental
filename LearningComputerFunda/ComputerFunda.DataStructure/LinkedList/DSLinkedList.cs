@@ -201,6 +201,25 @@ namespace ComputerFunda.DataStructure.LinkedList
             return returnValue;
         }
 
+        public DSNode<T> FindLoopStartPoint()
+        {
+            var current = this._head;
+            var runner = this._head;
+
+            while (runner != null && runner.Next != null)
+            {
+                current = current.Next;
+                runner = runner.Next.Next;
+
+                if (runner == current)
+                {
+                    return current;
+                }
+            }
+
+            return null;
+        }
+
         public T FindMiddle()
         {
             DSNode<T> slow = this._head;
