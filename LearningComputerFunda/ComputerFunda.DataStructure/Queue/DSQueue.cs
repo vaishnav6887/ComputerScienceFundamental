@@ -50,5 +50,20 @@ namespace ComputerFunda.DataStructure.Queue
 
             return head;
         }
+
+        public T Peek()
+        {
+            if(this.Head == null)
+            {
+                throw new InvalidOperationException("Queue is empty");
+            }
+
+            return this.Head.Data;
+        }
+
+        public bool IsEmpty()
+        {
+            return this.Head == null;
+        }
     }
 }
