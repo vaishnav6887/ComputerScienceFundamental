@@ -51,6 +51,7 @@
     <Compile Include="LinkedList\RemoveListElement.cs" />
     <Compile Include="LinkedList\ReturnKthToLastElement.cs" />
     <Compile Include="Math\MathProblems.cs" />
+    <Compile Include="MaxStack.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="String\CheckStringsArePermutation.cs" />
     <Compile Include="String\HasUniqueCharInString.cs" />
