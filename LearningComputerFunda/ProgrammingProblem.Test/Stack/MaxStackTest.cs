@@ -1,5 +1,4 @@
-﻿using System;
-using ComputerFunda.ProgrammingProblem;
+﻿using ComputerFunda.ProgrammingProblem.Stack;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace ProgrammingProblem.Test.Stack

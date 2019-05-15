@@ -4,29 +4,28 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ComputerFunda.ProgrammingProblem
+namespace ComputerFunda.ProgrammingProblem.Stack
 {
-    public class StackNode
+    public class MaxStackNode : StackNode 
     {
-        public int Data { get; set; }
         public int Max { get; set; }
-        public StackNode Next { get; set; }
 
-        public StackNode(int value)
-        {
-            this.Data = value;
+        public new MaxStackNode Next { get; set; }
+
+        public MaxStackNode(int value) : base(value)
+        { 
         }
     }
 
     public class MaxStack
     {
-        private StackNode _head;
+        private MaxStackNode _head;
 
         public int Count { get; set; }
 
         public void Push(int val)
         {
-            var newNode = new StackNode(val);
+            var newNode = new MaxStackNode(val);
             if(this._head == null)
             {
                 newNode.Max = val;
