@@ -53,6 +53,7 @@
     <Compile Include="Math\MathProblems.cs" />
     <Compile Include="Stack\MaxStack.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Stack\SortStack.cs" />
     <Compile Include="Stack\StackNode.cs" />
     <Compile Include="Stack\StackOfPlates.cs" />
     <Compile Include="String\CheckStringsArePermutation.cs" />

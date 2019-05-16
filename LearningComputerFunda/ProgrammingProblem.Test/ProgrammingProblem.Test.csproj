@@ -76,6 +76,7 @@
     <Compile Include="LinkedList\DeleteMiddleElementInListTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Stack\MaxStackTest.cs" />
+    <Compile Include="Stack\SortStackTest.cs" />
     <Compile Include="Stack\StackOfPlatesTest.cs" />
     <Compile Include="String\HasUniqueCharInStringTest.cs" />
     <Compile Include="String\CheckStringsArePermutationTest.cs" />
