@@ -51,6 +51,8 @@
     <Compile Include="LinkedList\RemoveListElement.cs" />
     <Compile Include="LinkedList\ReturnKthToLastElement.cs" />
     <Compile Include="Math\MathProblems.cs" />
+    <Compile Include="Queue\DSQueue.cs" />
+    <Compile Include="Queue\QueueNode.cs" />
     <Compile Include="Stack\MaxStack.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Stack\SortStack.cs" />
@@ -61,6 +63,7 @@
     <Compile Include="String\OneOperationAway.cs" />
     <Compile Include="String\StringCompression.cs" />
     <Compile Include="Tree\BinarySearchTree.cs" />
+    <Compile Include="Tree\CompleteBTreeUsingLinkedList.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ComputerFunda.Algorithm\ComputerFunda.Algorithm.csproj">

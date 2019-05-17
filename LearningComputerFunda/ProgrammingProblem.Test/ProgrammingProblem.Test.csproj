@@ -82,6 +82,7 @@
     <Compile Include="String\CheckStringsArePermutationTest.cs" />
     <Compile Include="String\StringCompressionTest.cs" />
     <Compile Include="String\OneOperationAwayTest.cs" />
+    <Compile Include="Tree\CompleteBTreeUsingLinkedListTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
