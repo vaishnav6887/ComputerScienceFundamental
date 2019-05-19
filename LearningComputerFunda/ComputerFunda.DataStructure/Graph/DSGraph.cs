@@ -11,7 +11,7 @@ namespace ComputerFunda.DataStructure.Graph
     {
         public int Length { get; set; }
 
-        private Dictionary<string, List<string>> _node = new Dictionary<string, List<string>>();
+        public Dictionary<string, List<string>> _node = new Dictionary<string, List<string>>();
 
         public void AddVertex(string data)
         {
@@ -30,7 +30,7 @@ namespace ComputerFunda.DataStructure.Graph
             _node[target].Add(data);
         }
 
-        public void AddUndirectedEdge(string data, string target)
+        public void AddDirectedEdge(string data, string target)
         {
             if (!_node.ContainsKey(data) && !_node.ContainsKey(target))
             {
