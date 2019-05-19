@@ -1,7 +1,7 @@
 ﻿using ComputerFunda.DataStructure.Tree.BinarySearchTree;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace ProgrammingProblem.Test.Tree.BinarySearchTreeTest
+namespace ProgrammingProblem.Test.BinarySearchTree
 {
     [TestCategory("BinarySearchTree")]
     [TestClass]

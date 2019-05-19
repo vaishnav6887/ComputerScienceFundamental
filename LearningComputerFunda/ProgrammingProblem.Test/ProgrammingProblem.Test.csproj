@@ -87,7 +87,7 @@
     <Compile Include="String\CheckStringsArePermutationTest.cs" />
     <Compile Include="String\StringCompressionTest.cs" />
     <Compile Include="String\OneOperationAwayTest.cs" />
-    <Compile Include="Tree\BinarySearchTreeTest\BinarySearchTreeTest.cs" />
+    <Compile Include="BinarySearchTree\BinarySearchTreeTest.cs" />
     <Compile Include="Tree\CompleteBTreeUsingLinkedListTest.cs" />
     <Compile Include="Tree\DSBinaryTreeTest.cs" />
   </ItemGroup>
