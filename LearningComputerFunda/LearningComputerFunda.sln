@@ -1,15 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27004.2010
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28902.138
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputerFunda.DataStructure", "ComputerFunda.DataStructure\ComputerFunda.DataStructure.csproj", "{CD224133-1878-4543-9D7A-7B51978ECA7E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputerFunda.Algorithm", "ComputerFunda.Algorithm\ComputerFunda.Algorithm.csproj", "{BE513F46-3717-485F-B18A-92E72E982E16}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputerFunda.Algorithm.Test", "ComputerFunda.Algorithm.Test\ComputerFunda.Algorithm.Test.csproj", "{9736EBA8-7A11-46E7-8561-C20F4BA139C6}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputerFunda.DataStructure.Test", "ComputerFunda.DataStructure.Test\ComputerFunda.DataStructure.Test.csproj", "{9D42A925-6EBE-41B3-8069-2901536E8B25}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputerFunda.Common", "ComputerFunda.Common\ComputerFunda.Common.csproj", "{F4353686-50C8-49B5-B22A-8F258464A253}"
 EndProject
@@ -35,10 +33,6 @@ Global
 		{9736EBA8-7A11-46E7-8561-C20F4BA139C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9736EBA8-7A11-46E7-8561-C20F4BA139C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9736EBA8-7A11-46E7-8561-C20F4BA139C6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9D42A925-6EBE-41B3-8069-2901536E8B25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9D42A925-6EBE-41B3-8069-2901536E8B25}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9D42A925-6EBE-41B3-8069-2901536E8B25}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9D42A925-6EBE-41B3-8069-2901536E8B25}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F4353686-50C8-49B5-B22A-8F258464A253}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F4353686-50C8-49B5-B22A-8F258464A253}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4353686-50C8-49B5-B22A-8F258464A253}.Release|Any CPU.ActiveCfg = Release|Any CPU

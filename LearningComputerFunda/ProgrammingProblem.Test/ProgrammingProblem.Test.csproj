@@ -64,6 +64,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArrayList\DSArrayTest.cs" />
     <Compile Include="Array\RotateMatrixTest.cs" />
     <Compile Include="Array\SortArrayMinimumSwapsTest.cs" />
     <Compile Include="Array\ArrayRotationV1Test.cs" />
@@ -71,6 +72,8 @@
     <Compile Include="Graph\DSGraphTest.cs" />
     <Compile Include="Heap\MinHeapTest.cs" />
     <Compile Include="LinkedList\DetectLoop.cs" />
+    <Compile Include="LinkedList\DSLinkedListTest.cs" />
+    <Compile Include="LinkedList\DSStackTest.cs" />
     <Compile Include="LinkedList\PalindromeTest.cs" />
     <Compile Include="LinkedList\RemoveDuplicatesTest.cs" />
     <Compile Include="LinkedList\RemoveListElementTest.cs" />
@@ -84,7 +87,9 @@
     <Compile Include="String\CheckStringsArePermutationTest.cs" />
     <Compile Include="String\StringCompressionTest.cs" />
     <Compile Include="String\OneOperationAwayTest.cs" />
+    <Compile Include="Tree\BinarySearchTreeTest\BinarySearchTreeTest.cs" />
     <Compile Include="Tree\CompleteBTreeUsingLinkedListTest.cs" />
+    <Compile Include="Tree\DSBinaryTreeTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

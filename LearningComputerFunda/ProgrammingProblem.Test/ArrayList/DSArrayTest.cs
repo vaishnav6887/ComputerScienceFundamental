@@ -1,10 +1,5 @@
 ﻿using ComputerFunda.DataStructure.ArrayList;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ComputerFunda.DataStructure.Test.ArrayList
 {
@@ -45,7 +40,7 @@ namespace ComputerFunda.DataStructure.Test.ArrayList
         [TestMethod]
         public void FCountFrequency_Of_All_Element()
         {
-            var dsArray  = new int[10] { 1, 2, 2, 2, 2, 6, 7, 8, 8, 1 };
+            var dsArray = new int[10] { 1, 2, 2, 2, 2, 6, 7, 8, 8, 1 };
 
             var dsArr = new DSArray<int>(10) { _data = dsArray };
             var returnValue = dsArr.FindFrequencyOfElement();
