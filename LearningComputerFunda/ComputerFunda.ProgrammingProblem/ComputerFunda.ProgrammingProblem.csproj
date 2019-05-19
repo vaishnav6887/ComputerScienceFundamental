@@ -65,6 +65,7 @@
     <Compile Include="String\StringCompression.cs" />
     <Compile Include="Tree\BinarySearchTree.cs" />
     <Compile Include="Tree\CompleteBTreeUsingLinkedList.cs" />
+    <Compile Include="Tree\ListOfDepth.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ComputerFunda.Algorithm\ComputerFunda.Algorithm.csproj">

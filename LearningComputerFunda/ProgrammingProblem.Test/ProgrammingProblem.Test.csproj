@@ -91,6 +91,7 @@
     <Compile Include="BinarySearchTree\BinarySearchTreeTest.cs" />
     <Compile Include="Tree\CompleteBTreeUsingLinkedListTest.cs" />
     <Compile Include="Tree\DSBinaryTreeTest.cs" />
+    <Compile Include="Tree\ListOfDepthTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
