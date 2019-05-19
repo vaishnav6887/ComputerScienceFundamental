@@ -41,6 +41,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ArrayList\DSArray.cs" />
+    <Compile Include="Graph\DSGraph.cs" />
+    <Compile Include="Graph\GraphNode.cs" />
     <Compile Include="Heap\DSHeap.cs" />
     <Compile Include="Heap\MinHeap.cs" />
     <Compile Include="LinkedList\DSDoubleLinkedList.cs" />
