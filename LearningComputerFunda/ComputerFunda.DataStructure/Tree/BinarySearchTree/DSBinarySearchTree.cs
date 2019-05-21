@@ -37,6 +37,11 @@ namespace ComputerFunda.DataStructure.Tree.BinarySearchTree
             return this.Traverse(this.Head, key);
         }
 
+        public void Delete(int item)
+        {
+
+        }
+
         private void FindSpotToInsert(DSBinarySearchNode<int> node, int data)
         {
             if(node == null)

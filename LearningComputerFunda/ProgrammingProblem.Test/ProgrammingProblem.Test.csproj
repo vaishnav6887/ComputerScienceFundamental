@@ -69,6 +69,7 @@
     <Compile Include="Array\SortArrayMinimumSwapsTest.cs" />
     <Compile Include="Array\ArrayRotationV1Test.cs" />
     <Compile Include="Array\ArrayRotationV2Test.cs" />
+    <Compile Include="BinarySearchTree\InOrderSuccessorBSTTest.cs" />
     <Compile Include="Graph\DSGraphTest.cs" />
     <Compile Include="Graph\RouteBetweenNodesTest.cs" />
     <Compile Include="Heap\MinHeapTest.cs" />
