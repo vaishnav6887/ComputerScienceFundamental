@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ComputerFunda.DataStructure.Heap
 {
-    public class MinHeap : DSHeap
+    public class MaxHeap: DSHeap
     {
-        public MinHeap(int length)
+        public MaxHeap(int length)
         {
             _data = new int[length];
         }
@@ -27,7 +27,7 @@ namespace ComputerFunda.DataStructure.Heap
 
         public int Peek()
         {
-            if(_count == 0)
+            if (_count == 0)
             {
                 throw new IndexOutOfRangeException();
             }
@@ -45,6 +45,7 @@ namespace ComputerFunda.DataStructure.Heap
             int returnValue = _data[0];
 
             _data[0] = _data[_count - 1];
+
             _count--;
 
             ReOrderDown(0);
@@ -54,44 +55,41 @@ namespace ComputerFunda.DataStructure.Heap
 
         public void Add(int value)
         {
-            if(_count == _data.Length)
+            if (_count == _data.Length)
             {
                 throw new OverflowException();
             }
 
             _data[_count] = value;
-            
             ReOrderUp();
-
             _count++;
         }
 
-        private void ReOrderUp()
+        public void ReOrderUp()
         {
             int index = _count;
-            while(!IsRoot(index) && _data[index] < GetParent(index))
+            while(!IsRoot(index) && GetParent(index) < _data[index])
             {
                 int parentIndex = GetParentIndex(index);
-                Swap(index, parentIndex);
-
+                Swap(parentIndex, index);
                 index = parentIndex;
             }
         }
 
-        private void ReOrderDown(int index)
+        public void ReOrderDown(int down)
         {
-            while(HasLeftChild(index))
+            while (HasLeftChild(down))
             {
-                int min = GetLeftChildIndex(index);
-                if(HasRightChild(index) && GetRightChild(index) < _data[min])
+                int max = GetLeftChildIndex(down);
+                if(HasRightChild(down) && _data[max] < GetRightChild(down))
                 {
-                    min = GetRightChildIndex(index);
+                    max = GetRightChildIndex(down);
                 }
 
-                if(_data[min] < _data[index])
+                if(_data[max] > _data[down])
                 {
-                    Swap(min, index);
-                    index = min;
+                    Swap(max, down);
+                    down = max;
                 }
                 else
                 {
