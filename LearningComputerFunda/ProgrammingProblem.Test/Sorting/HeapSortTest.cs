@@ -11,7 +11,7 @@ namespace ProgrammingProblem.Test.Sorting
     public class HeapSortTest
     {
         [TestMethod]
-        public void TestMethod1()
+        public void Heap_Sort_Test()
         {
             int Min = 0;
             int Max = 20;
