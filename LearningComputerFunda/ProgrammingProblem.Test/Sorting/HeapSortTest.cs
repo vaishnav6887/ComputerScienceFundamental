@@ -14,7 +14,7 @@ namespace ProgrammingProblem.Test.Sorting
         public void Heap_Sort_Test()
         {
             int Min = 0;
-            int Max = 20;
+            int Max = 200;
             Random randNum = new Random();
             int[] input = Enumerable
                 .Repeat(Min, Max)

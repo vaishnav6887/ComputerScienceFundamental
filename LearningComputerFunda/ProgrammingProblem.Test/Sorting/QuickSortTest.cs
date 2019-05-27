@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Diagnostics;
+using System.Linq;
 using ComputerFunda.ProgrammingProblem.Sorting;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -22,6 +24,29 @@ namespace ProgrammingProblem.Test.Sorting
             Assert.IsNotNull(actual);
 
             CollectionAssert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void QuickSort_Algo_Test()
+        {
+            int Min = 0;
+            int Max = 200;
+            Random randNum = new Random();
+            int[] input = Enumerable
+                .Repeat(Min, Max)
+                .Select(i => randNum.Next(Min, Max)).OrderByDescending(s => s).Distinct()
+                .ToArray();
+
+            ISort sort = new QuickSort(input);
+            Stopwatch timer = new Stopwatch();
+            timer.Start();
+            int[] actual = sort.Sort();
+            timer.Stop();
+            input = input.OrderBy(s => s).ToArray();
+
+            Assert.IsNotNull(actual);
+
+            CollectionAssert.AreEqual(input, actual);
         }
     }
 }
