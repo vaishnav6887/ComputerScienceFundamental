@@ -52,6 +52,7 @@
     <Compile Include="LinkedList\RemoveListElement.cs" />
     <Compile Include="LinkedList\ReturnKthToLastElement.cs" />
     <Compile Include="Math\MathProblems.cs" />
+    <Compile Include="Math\NumberSwapper.cs" />
     <Compile Include="Queue\DSQueue.cs" />
     <Compile Include="Queue\QueueNode.cs" />
     <Compile Include="Searching\SortedSearchNoSize.cs" />
