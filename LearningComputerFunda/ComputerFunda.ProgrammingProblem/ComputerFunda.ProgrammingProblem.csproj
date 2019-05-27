@@ -59,6 +59,7 @@
     <Compile Include="Sorting\HeapSort.cs" />
     <Compile Include="Sorting\InsertionSort.cs" />
     <Compile Include="Sorting\ISort.cs" />
+    <Compile Include="Sorting\QuickSort.cs" />
     <Compile Include="Sorting\SelectionSort.cs" />
     <Compile Include="Stack\MaxStack.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

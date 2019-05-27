@@ -85,8 +85,10 @@
     <Compile Include="Searching\SortedSearchNoSizeTest.cs" />
     <Compile Include="Sorting\BubbleSortTest.cs" />
     <Compile Include="Sorting\HeapSortTest.cs" />
+    <Compile Include="Sorting\QuickSortTest.cs" />
     <Compile Include="Sorting\SelectionSortTest.cs" />
     <Compile Include="Sorting\InsertionSortTest.cs" />
+    <Compile Include="Sorting\SortingLoadTest.cs" />
     <Compile Include="Stack\MaxStackTest.cs" />
     <Compile Include="Stack\SortStackTest.cs" />
     <Compile Include="Stack\StackOfPlatesTest.cs" />
