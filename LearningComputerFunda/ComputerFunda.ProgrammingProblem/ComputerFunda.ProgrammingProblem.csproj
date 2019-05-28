@@ -45,6 +45,7 @@
     <Compile Include="Array\RotateMatrix.cs" />
     <Compile Include="Array\SortArrayMinimumSwaps.cs" />
     <Compile Include="Graph\RouteBetweenNodes.cs" />
+    <Compile Include="HashMap\WordFrequency.cs" />
     <Compile Include="LinkedList\DeleteMiddleElementInList.cs" />
     <Compile Include="LinkedList\FindMiddleOfList.cs" />
     <Compile Include="LinkedList\Palindrome.cs" />

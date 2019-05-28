@@ -72,6 +72,7 @@
     <Compile Include="BinarySearchTree\InOrderSuccessorBSTTest.cs" />
     <Compile Include="Graph\DSGraphTest.cs" />
     <Compile Include="Graph\RouteBetweenNodesTest.cs" />
+    <Compile Include="HashMap\WordFrequencyTest.cs" />
     <Compile Include="Heap\MinHeapTest.cs" />
     <Compile Include="LinkedList\DetectLoop.cs" />
     <Compile Include="LinkedList\DSLinkedListTest.cs" />
