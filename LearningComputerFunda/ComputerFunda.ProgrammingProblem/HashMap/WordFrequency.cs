@@ -34,7 +34,7 @@ namespace ComputerFunda.ProgrammingProblem.HashMap
             {
                 int frequency = 0;
 
-                frequency = Book.Count(s => s.Equals(word));
+                frequency = Book.Count(s => s.Contains(word));
 
                 _map.Add(word, frequency);
 
