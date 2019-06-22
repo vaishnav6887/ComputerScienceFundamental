@@ -73,6 +73,7 @@
     <Compile Include="BitManipulation\MaxNumberWithoutComparisonTest.cs" />
     <Compile Include="Graph\DSGraphTest.cs" />
     <Compile Include="Graph\RouteBetweenNodesTest.cs" />
+    <Compile Include="HashMap\TopFavoriteDrinksTest.cs" />
     <Compile Include="HashMap\WordFrequencyTest.cs" />
     <Compile Include="Heap\MinHeapTest.cs" />
     <Compile Include="LinkedList\DetectLoop.cs" />
