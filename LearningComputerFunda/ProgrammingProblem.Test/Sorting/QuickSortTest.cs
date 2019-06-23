@@ -15,9 +15,9 @@ namespace ProgrammingProblem.Test.Sorting
         {
             int[] data = new int[10] { 9, 7, 5, 11, 12, 2, 14, 3, 10, 6 };
 
-            QuickSort obj = new QuickSort(data);
+            QuickSort obj = new QuickSort();
 
-            int[] actual = obj.Sort();
+            int[] actual = obj.Sort(data);
 
             int[] expected = new int[10] { 2, 3, 5, 6, 7, 9, 10, 11, 12, 14 };
 
@@ -37,10 +37,10 @@ namespace ProgrammingProblem.Test.Sorting
                 .Select(i => randNum.Next(Min, Max)).OrderByDescending(s => s).Distinct()
                 .ToArray();
 
-            ISort sort = new QuickSort(input);
+            ISort sort = new QuickSort();
             Stopwatch timer = new Stopwatch();
             timer.Start();
-            int[] actual = sort.Sort();
+            int[] actual = sort.Sort(input);
             timer.Stop();
             input = input.OrderBy(s => s).ToArray();
 

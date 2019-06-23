@@ -10,13 +10,9 @@ namespace ComputerFunda.ProgrammingProblem.Sorting
     {
         private int[] arr;
 
-        public InsertionSort(int[] _arr)
+        public int[] Sort(int[] _arr)
         {
             arr = _arr;
-        }
-
-        public int[] Sort()
-        {
             for (int i = 1; i < arr.Length; i++)
             {
                 int current = arr[i];

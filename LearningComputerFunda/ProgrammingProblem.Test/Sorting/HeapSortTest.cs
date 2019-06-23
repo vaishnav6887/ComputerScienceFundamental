@@ -21,10 +21,10 @@ namespace ProgrammingProblem.Test.Sorting
                 .Select(i => randNum.Next(Min, Max)).OrderByDescending(s => s).Distinct()
                 .ToArray();
             
-            ISort sort = new HeapSort(input);
+            ISort sort = new HeapSort();
             Stopwatch timer = new Stopwatch();
             timer.Start();
-            int[] actual = sort.Sort();
+            int[] actual = sort.Sort(input);
             timer.Stop();
             input = input.OrderBy(s => s).ToArray();
 

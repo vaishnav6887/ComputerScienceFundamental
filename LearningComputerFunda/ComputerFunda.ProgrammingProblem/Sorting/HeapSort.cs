@@ -13,14 +13,11 @@ namespace ComputerFunda.ProgrammingProblem.Sorting
 
         private int[] arr;
 
-        public HeapSort(int[] _arr)
+        public int[] Sort(int[] _arr)
         {
             _data = new MaxHeap(_arr.Length);
             arr = _arr;
-        }
 
-        public int[] Sort()
-        {
             foreach (var item in arr)
             {
                 _data.Add(item);

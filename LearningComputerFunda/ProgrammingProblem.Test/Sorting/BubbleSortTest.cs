@@ -24,10 +24,10 @@ namespace ProgrammingProblem.Test.Sorting
                 .Select(i => randNum.Next(Min, Max)).OrderByDescending(s => s).Distinct()
                 .ToArray();
 
-            ISort sort = new BubbleSort(input);
+            ISort sort = new BubbleSort();
             Stopwatch timer = new Stopwatch();
             timer.Start();
-            int[] actual = sort.Sort();
+            int[] actual = sort.Sort(input);
             timer.Stop();
             input = input.OrderBy(s => s).ToArray();
 

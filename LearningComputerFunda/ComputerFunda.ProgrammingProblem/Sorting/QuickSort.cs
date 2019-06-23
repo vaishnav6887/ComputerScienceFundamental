@@ -9,12 +9,10 @@ namespace ComputerFunda.ProgrammingProblem.Sorting
     public class QuickSort : ISort
     {
         private int[] data;
-        public QuickSort(int[] _data)
+
+        public int[] Sort(int[] _data)
         {
             data = _data;
-        }
-        public int[] Sort()
-        {
             /// Step 1: find pivot
 
             QuickSorting(0, data.Length - 1);

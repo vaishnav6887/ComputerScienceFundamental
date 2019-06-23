@@ -10,13 +10,10 @@ namespace ComputerFunda.ProgrammingProblem.Sorting
     {
         private int[] arr;
 
-        public SelectionSort(int[] _arr)
+        public int[] Sort(int[] _arr)
         {
             arr = _arr;
-        }
 
-        public int[] Sort()
-        {
             if (arr == null || arr.Length == 0)
             {
                 return arr;

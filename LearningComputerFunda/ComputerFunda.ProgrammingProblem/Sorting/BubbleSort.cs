@@ -10,15 +10,11 @@ namespace ComputerFunda.ProgrammingProblem.Sorting
     public class BubbleSort: ISort
     {
         private int[] arr;
-
-        public BubbleSort(int[] _arr)
+        public int[] Sort(int[] _arr)
         {
             arr = _arr;
-        }
 
-        public int[] Sort()
-        {
-            if(arr == null || arr.Length == 0)
+            if (arr == null || arr.Length == 0)
             {
                 return arr;
             }

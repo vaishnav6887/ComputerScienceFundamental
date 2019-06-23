@@ -22,11 +22,11 @@ namespace ProgrammingProblem.Test.Sorting
                 .Select(i => randNum.Next(Min, Max)).OrderByDescending(s => s).Distinct()
                 .ToArray();
 
-            ISort bubbleSort = new BubbleSort(input);
-            ISort heapSort = new HeapSort(input);
-            ISort insertionSort = new InsertionSort(input);
-            ISort quickSort = new QuickSort(input);
-            ISort selectionSort = new SelectionSort(input);
+            ISort bubbleSort = new BubbleSort();
+            ISort heapSort = new HeapSort();
+            ISort insertionSort = new InsertionSort();
+            ISort quickSort = new QuickSort();
+            ISort selectionSort = new SelectionSort();
 
             Stopwatch timer = new Stopwatch();
             timer.Start();
@@ -36,11 +36,11 @@ namespace ProgrammingProblem.Test.Sorting
             var quick = new int[input.Length];
             var selection = new int[input.Length];
 
-            Parallel.Invoke(() => bubble = bubbleSort.Sort(), 
-                            () => heap = heapSort.Sort(),
-                            () => insertion = insertionSort.Sort(),
-                            () => quick = quickSort.Sort(),
-                            () => selection = selectionSort.Sort());
+            Parallel.Invoke(() => bubble = bubbleSort.Sort(input), 
+                            () => heap = heapSort.Sort(input),
+                            () => insertion = insertionSort.Sort(input),
+                            () => quick = quickSort.Sort(input),
+                            () => selection = selectionSort.Sort(input));
             timer.Stop();
 
             CollectionAssert.AreEqual(bubble, insertion);
