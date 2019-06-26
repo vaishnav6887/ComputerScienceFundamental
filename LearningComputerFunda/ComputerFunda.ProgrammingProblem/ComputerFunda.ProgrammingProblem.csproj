@@ -44,6 +44,7 @@
     <Compile Include="Array\ArrayRotationV2.cs" />
     <Compile Include="Array\RotateMatrix.cs" />
     <Compile Include="Array\SortArrayMinimumSwaps.cs" />
+    <Compile Include="BackTracking\CombinationSum.cs" />
     <Compile Include="BitManipulation\MaxNumberWithoutComparison.cs" />
     <Compile Include="Graph\RouteBetweenNodes.cs" />
     <Compile Include="HashMap\TopFavoriteDrinks.cs" />
