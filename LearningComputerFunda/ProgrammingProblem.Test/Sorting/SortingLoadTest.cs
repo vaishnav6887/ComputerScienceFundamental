@@ -15,7 +15,7 @@ namespace ProgrammingProblem.Test.Sorting
         public void HighData_Test()
         {
             int Min = 0;
-            int Max = 20000;
+            int Max = 2000;
             Random randNum = new Random();
             int[] input = Enumerable
                 .Repeat(Min, Max)
