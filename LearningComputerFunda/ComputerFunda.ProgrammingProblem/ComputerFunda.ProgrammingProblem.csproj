@@ -46,6 +46,7 @@
     <Compile Include="Array\SortArrayMinimumSwaps.cs" />
     <Compile Include="BackTracking\CombinationSum.cs" />
     <Compile Include="BitManipulation\MaxNumberWithoutComparison.cs" />
+    <Compile Include="DynamicProgramming\CoinChange.cs" />
     <Compile Include="Graph\RouteBetweenNodes.cs" />
     <Compile Include="HashMap\TopFavoriteDrinks.cs" />
     <Compile Include="HashMap\WordFrequency.cs" />
