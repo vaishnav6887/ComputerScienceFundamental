@@ -88,6 +88,7 @@
     <Compile Include="LinkedList\DeleteMiddleElementInListTest.cs" />
     <Compile Include="Math\NumberSwapperTest.cs" />
     <Compile Include="Math\LotteryTest.cs" />
+    <Compile Include="Math\SqrtTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Searching\SortedSearchNoSizeTest.cs" />
     <Compile Include="Sorting\BubbleSortTest.cs" />
@@ -104,6 +105,7 @@
     <Compile Include="String\StringCompressionTest.cs" />
     <Compile Include="String\OneOperationAwayTest.cs" />
     <Compile Include="BinarySearchTree\BinarySearchTreeTest.cs" />
+    <Compile Include="Tree\BinarySearchTreeIsValidTest.cs" />
     <Compile Include="Tree\CompleteBTreeUsingLinkedListTest.cs" />
     <Compile Include="Tree\DSBinaryTreeTest.cs" />
     <Compile Include="Tree\ListOfDepthTest.cs" />
