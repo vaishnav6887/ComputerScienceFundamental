@@ -80,6 +80,7 @@
     <Compile Include="String\StringCompression.cs" />
     <Compile Include="Tree\BinarySearchTree.cs" />
     <Compile Include="Tree\CompleteBTreeUsingLinkedList.cs" />
+    <Compile Include="Tree\HeightOfBinaryTree.cs" />
     <Compile Include="Tree\InOrderSuccessorBST.cs" />
     <Compile Include="Tree\ListOfDepth.cs" />
   </ItemGroup>
