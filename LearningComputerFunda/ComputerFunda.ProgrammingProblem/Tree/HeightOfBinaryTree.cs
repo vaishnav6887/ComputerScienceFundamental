@@ -16,7 +16,7 @@ namespace ComputerFunda.ProgrammingProblem.Tree
     {
         public int FindHeight(Node head)
         {
-            return InOrderTraversal(head);
+            return InOrderTraversal(head) - 1;
         }
 
         public int InOrderTraversal(Node node)

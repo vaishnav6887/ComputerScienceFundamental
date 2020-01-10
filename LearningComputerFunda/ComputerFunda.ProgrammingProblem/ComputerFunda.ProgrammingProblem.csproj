@@ -83,6 +83,7 @@
     <Compile Include="Tree\HeightOfBinaryTree.cs" />
     <Compile Include="Tree\InOrderSuccessorBST.cs" />
     <Compile Include="Tree\ListOfDepth.cs" />
+    <Compile Include="Tree\LowestCommonAncestorBST.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ComputerFunda.Algorithm\ComputerFunda.Algorithm.csproj">
