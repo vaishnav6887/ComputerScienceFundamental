@@ -10,6 +10,7 @@ namespace ProgrammingProblem.Test.BackTracking
     public class CombinationSumTest
     {
         [TestMethod]
+        [TestCategory("BackTracking")]
         public void FindCombinationSum_Test()
         {
             int[] arr = new int[] { 10, 1, 2, 7, 6, 1, 5 };
