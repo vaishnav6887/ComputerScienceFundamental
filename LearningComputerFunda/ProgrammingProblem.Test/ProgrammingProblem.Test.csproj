@@ -73,6 +73,7 @@
     <Compile Include="BinarySearchTree\InOrderSuccessorBSTTest.cs" />
     <Compile Include="BitManipulation\MaxNumberWithoutComparisonTest.cs" />
     <Compile Include="DynamicProgramming\CoinChangeTest.cs" />
+    <Compile Include="DynamicProgramming\KnapSnackTest.cs" />
     <Compile Include="Graph\DSGraphTest.cs" />
     <Compile Include="Graph\RouteBetweenNodesTest.cs" />
     <Compile Include="HashMap\TopFavoriteDrinksTest.cs" />
