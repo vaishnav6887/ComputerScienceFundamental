@@ -2,40 +2,53 @@
 
 namespace ComputerFunda.ProgrammingProblem.DynamicProgramming
 {
-    public class KnapSnack
+    public class KnapSack
     {
-        public List<int> _weights { get; set; }
-        public List<int> _profits { get; set; }
-        public int _capacity { get; set; }
+        private List<int> _weights;
+        private List<int> _profits;
+        private int _capacity;
         public int _maxProfit { get; set; }
-        public KnapSnack(List<int> weights, List<int> profits, int capacity)
+        public int _numberOfIteration { get; set; }
+        private Dictionary<string, int> _memoization;
+
+        public KnapSack(List<int> weights, List<int> profits, int capacity)
         {
             _capacity = capacity;
             _weights = weights;
             _profits = profits;
             _maxProfit = 0;
+            _numberOfIteration = 0;
+            _memoization = new Dictionary<string, int>();
         }
 
         public int Calculate(int remainingCapacity, int currentWeight = 0, int currentProfit = 0, int index = 0)
         {
-            if(remainingCapacity <= 0 || index >= _weights.Count)
+            _numberOfIteration++;
+            if (remainingCapacity <= 0 || index >= _weights.Count)
             {
                 return currentProfit;
             }
+
+            string key = $"{remainingCapacity}_{index}";
+            if (_memoization.ContainsKey(key))
+            {
+                return _memoization[key];
+            }
+            
 
             int newWeight = currentWeight + _weights[index];
 
             int withCurrent = 0;
             int withOutCurrent = 0;
-
-            if(newWeight <= _capacity)
+            
+            if (newWeight <= _capacity)
                 withCurrent = Calculate(remainingCapacity - _weights[index], newWeight, currentProfit + _profits[index], index + 1);
 
             withOutCurrent = Calculate(remainingCapacity, currentWeight, currentProfit, index + 1);
 
             _maxProfit = System.Math.Max(_maxProfit, System.Math.Max(withCurrent, withOutCurrent));
-
-            return System.Math.Max(withCurrent, withOutCurrent);
+            _memoization.Add(key, System.Math.Max(withCurrent, withOutCurrent));
+            return _memoization[key];
         }
     }
 }

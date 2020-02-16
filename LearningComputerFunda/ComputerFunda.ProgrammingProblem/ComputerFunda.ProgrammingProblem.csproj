@@ -47,7 +47,7 @@
     <Compile Include="BackTracking\CombinationSum.cs" />
     <Compile Include="BitManipulation\MaxNumberWithoutComparison.cs" />
     <Compile Include="DynamicProgramming\CoinChange.cs" />
-    <Compile Include="DynamicProgramming\KnapSnack.cs" />
+    <Compile Include="DynamicProgramming\KnapSack.cs" />
     <Compile Include="Graph\RouteBetweenNodes.cs" />
     <Compile Include="HashMap\TopFavoriteDrinks.cs" />
     <Compile Include="HashMap\WordFrequency.cs" />

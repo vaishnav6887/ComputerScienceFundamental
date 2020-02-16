@@ -6,7 +6,7 @@ using System.Collections.Generic;
 namespace ProgrammingProblem.Test.DynamicProgramming
 {
     [TestClass]
-    public class KnapSnackTest
+    public class KnapSackTest
     {
         [TestCategory("DynamicProgramming")]
         [TestMethod]
@@ -16,10 +16,10 @@ namespace ProgrammingProblem.Test.DynamicProgramming
             List<int> profits = new List<int>() { 4, 5, 3, 7 };
             int capacity = 5;
 
-            KnapSnack obj = new KnapSnack(weights, profits, capacity);
+            KnapSack obj = new KnapSack(weights, profits, capacity);
             obj.Calculate(capacity);
             int expected = 10;
-
+            int numberOfIt = obj._numberOfIteration;
             Assert.AreEqual(expected, obj._maxProfit);
         }
     }
