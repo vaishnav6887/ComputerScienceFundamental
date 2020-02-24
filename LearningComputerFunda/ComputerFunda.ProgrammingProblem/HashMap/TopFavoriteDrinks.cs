@@ -13,7 +13,7 @@ namespace ComputerFunda.ProgrammingProblem.HashMap
     /// 3: [3,2,5],
     /// 4: [5,8]
     /// 
-    /// Lazy bar tender is trying to reduce his efforts by limiting the drinkshe must learn in order to satisfy all customers.
+    /// Lazy bar tender is trying to reduce his efforts by limiting the drinks he must learn in order to satisfy all customers.
     /// For the input above, the answer would be 2, as drinks 1 and 5 will satisfy everyone.
     /// </summary>
     public class TopFavoriteDrinks
