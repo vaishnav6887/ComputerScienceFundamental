@@ -4,7 +4,7 @@ using System.Linq;
 namespace ComputerFunda.ProgrammingProblem.HashMap
 {
     /// <summary>
-    /// At a popular bar, each customer has a set of favorite drinks, and will happily accept any rink among this set. 
+    /// At a popular bar, each customer has a set of favorite drinks, and will happily accept any drink among this set. 
     /// For example, in the folllowing situation, customer 0 will be satified with drinks 0, 1, 3, or 6.
     /// Preferences: {
     /// 0: [0, 1, 3, 6],
